@@ -1,0 +1,24 @@
+{
+  "name": "freelancegroup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azdmom/freelanceGroup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azdmom/freelanceGroup/issues"
+  },
+  "homepage": "https://github.com/azdmom/freelanceGroup#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap-select": "^1.13.1",
+    "express": "^4.16.3"
+  }
+}

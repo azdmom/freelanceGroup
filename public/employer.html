@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <title>Employer Sign-Up</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Employer Sign-Up</h1>
+        </header>
+        <form>
+            <div class="form-group">
+                <label for="companyName">Company Name: </label>
+                <input type="text" class="form-control form-inline" id="companyName" placeholder="Enter company name">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone you don't want us to.</small>
+            </div>
+            <div class="form-group">
+                <label for="contactName">Contact Name: </label>
+                <input type="text" class="form-control form-inline" id="contactName" placeholder="Enter contact name">
+            </div>
+            <div class="form-group">
+                <label for="contactPhone">Contact Phone: </label>
+                <input type="tel" class="form-control form-inline" id="contactPhone" placeholder="Enter contact phone">
+            </div>
+            <div class="form-group">
+                <label for="contactEmail">Contact Email: </label>
+                <input type="email" class="form-control form-inline" id="contactEmail" placeholder="Enter contact email">
+            </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false" title="Area of Hiring Interest">
+                    <select class="selectpicker" multiple>
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Relish</option>
+                    </select>
+                </button>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    $('.selectpicker').selectpicker({
+        style: 'btn-info',
+        size: 4
+    });
+
+</script>
