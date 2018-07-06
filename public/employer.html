@@ -5,10 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <title>Employer Sign-Up</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="/js/employer.js" type="text/javascript"></script>
+    <title>FTF Employer Sign-Up</title>
 </head>
 
 <body>
@@ -19,7 +24,7 @@
         <form>
             <div class="form-group">
                 <label for="companyName">Company Name: </label>
-                <input type="text" class="form-control form-inline" id="companyName" placeholder="Enter company name">
+                <input type="text" class="form-control form-inline" id="employerName" placeholder="Enter company name">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone you don't want us to.</small>
             </div>
             <div class="form-group">
@@ -40,7 +45,7 @@
             </div>
             <div class="form-row">
                 <span>Select all Fields of Interest: </span>
-                <select class="js-example-basic-multiple" name="fields" multiple="multiple">
+                <select class="js-example-basic-multiple form-control chosen-select" name="fields" multiple="multiple" id="employerfields" >
                     <option value=""></option>
                     <option value="frontEndDev" class="dropdown-item">Front End Dev</option>
                     <option value="backEndDev" class="dropdown-item">Back End Dev</option>
@@ -54,16 +59,13 @@
                     <option value="cloudArchitect" class="dropdown-item">Cloud Architect</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <button id="employer-submit" type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
         </form>
     </div>
 </body>
 
 </html>
-
-<script type="text/javascript">
-    $('.selectpicker').selectpicker({
-        style: 'btn-info',
-        size: 4
-    });
-</script>
