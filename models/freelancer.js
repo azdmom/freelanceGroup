@@ -8,9 +8,12 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
         },
-        Email: {
+        ContactEmail: {
             type: DataTypes.STRING,
             allowNull: false,
+            validate: {
+                isEmail: true,     // checks for email format (foo@bar.com)
+            }
         },
         Phone: {
             type: DataTypes.STRING,
