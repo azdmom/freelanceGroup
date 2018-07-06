@@ -19,6 +19,9 @@ module.exports = function (sequelize, DataTypes) {
         ContactEmail: {
             type: DataTypes.STRING,
             allowNull: false,
+            validate: {
+                isEmail: true,       // checks for email format (foo@bar.com)
+            }
         },
         Fields: {
             type: DataTypes.STRING,

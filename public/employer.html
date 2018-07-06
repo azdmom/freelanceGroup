@@ -38,15 +38,21 @@
                 <label for="contactEmail">Contact Email: </label>
                 <input type="email" class="form-control form-inline" id="contactEmail" placeholder="Enter contact email">
             </div>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="false" title="Area of Hiring Interest">
-                    <select class="selectpicker" multiple>
-                        <option>Mustard</option>
-                        <option>Ketchup</option>
-                        <option>Relish</option>
-                    </select>
-                </button>
+            <div class="form-row">
+                <span>Select all Fields of Interest: </span>
+                <select class="js-example-basic-multiple" name="fields" multiple="multiple">
+                    <option value=""></option>
+                    <option value="frontEndDev" class="dropdown-item">Front End Dev</option>
+                    <option value="backEndDev" class="dropdown-item">Back End Dev</option>
+                    <option value="graphicDes" class="dropdown-item">Graphic Designer</option>
+                    <option value="dbEng" class="dropdown-item">DB Engineer</option>
+                    <option value="fullStackDev" class="dropdown-item">Full Stack Dev</option>
+                    <option value="projMgr" class="dropdown-item">Project Manager</option>
+                    <option value="infoSecurity" class="dropdown-item">Information Security</option>
+                    <option value="digitalMark" class="dropdown-item">Digital Markerting</option>
+                    <option value="contentCreate" class="dropdown-item">Content Creator</option>
+                    <option value="cloudArchitect" class="dropdown-item">Cloud Architect</option>
+                </select>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
