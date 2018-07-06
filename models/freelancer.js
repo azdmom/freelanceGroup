@@ -27,6 +27,7 @@ module.exports = function (sequelize, DataTypes) {
         Fields: {
             type: DataTypes.STRING,
             allowNull: false,
+           
         },
     }, {
         freezefreelancer: true // Model tableName will be the same as the model name instead of being pluralized

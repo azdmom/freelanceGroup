@@ -3,24 +3,36 @@ $(document).ready(function() {
     $('.js-example-basic-multiple').select2();
        
 
-    // $(".devour-form").on("submit", function(event) {
-    //   event.preventDefault();
+    $("#freelance-submit").on("click", function(event) {
+      alert("Thank you for submitting your information!");
+      event.preventDefault();
+
+      var fields = $("#freelancefields").val()
+
+      fields2 = fields.join();
   
-    //   var burgerInfo = {
-    //     burger_id: $(this).children(".burger_id").val(),
-    //     customer: $(this).children(".custom-input").val()
-    //   };
+      var freelanceInfo = {
+        FName: $("#freelanceFName").val(),
+        LName: $("#freelanceLName").val(),
+        Email: $("#freelanceEmail").val(),
+        Phone: $("#freelancePhone").val(),
+        City: $("#freelanceCity").val(),
+        State: $("#freelancestate").val(),
+        Fields: fields2
+      };
+
+      console.log(freelanceInfo);
   
-    //   $.ajax({
-    //     method: "PUT",
-    //     url: "/burgers/update",
-    //     data: burgerInfo
-    //   }).then(function(data) {
-    //     // reload page to display devoured burger in proper column
-    //     location.reload();
-    //   });
+      $.ajax({
+        method: "POST",
+        url: "/freelanceadd",
+        data: freelanceInfo
+      }).then(function(data) {
+      console.log(data);
+        location.reload();
+      });
   
-    // });
+    });
   });
   
   
