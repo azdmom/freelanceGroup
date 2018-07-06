@@ -3,7 +3,7 @@ var router = express.Router();
 var db = require("../models");
 
 // post route to create burgers
-router.post("/freelancer/create", function(req, res) {
+router.post("/freelanceadd", function(req, res) {
   // edited burger create to add in a burger_name
   db.freelancer.create({
     FName: req.body.FName,
