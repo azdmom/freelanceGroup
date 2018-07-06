@@ -15,10 +15,11 @@ app.use(bodyParser.json());
 require("./routes/htmlRoutes")(app);
 app.use(express.static("public"));
 
-var routes = require("./controllers/freelancer_controller.js");
-var routes = require("./controllers/employer_controller.js");
+var routes1 = require("./controllers/freelancer_controller.js");
+var routes2 = require("./controllers/employer_controller.js");
 
-app.use(routes);
+app.use(routes1);
+app.use(routes2);
 
 
 var nodemailer = require('nodemailer');
