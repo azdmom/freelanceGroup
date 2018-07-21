@@ -69,10 +69,12 @@
                     <label for="inputCity">City</label>
                     <input type="text" class="form-control" id="freelanceCity" placeholder="City">
                 </div>
+            </div>
+            <div class="form-row">
                 <div class="form-group col-md-6">
                     <label htmlFor="state">State</label>
-                    <select className="form-control" id="freelancestate" name="state" required>
-                        <option value="">N/A</option>
+                    <select class="form-control chosen-select" id="freelancestate" name="state" required>
+                        <option value=""></option>
                         <option value="AK">Alaska</option>
                         <option value="AL">Alabama</option>
                         <option value="AR">Arkansas</option>
@@ -127,9 +129,10 @@
                         <option value="WY">Wyoming</option>
                     </select>
                 </div>
+            </div>
             <div class="form-row">
-                <span>Select all Fields of Interest: </span>
-                <select class="js-example-basic-multiple" name="fields" multiple="multiple" id="freelancefields">
+                <span>Select all Fields of Expertise: </span>
+                <select class="js-example-basic-multiple chosen-select" name="fields" multiple="multiple" id="freelancefields">
                     <option value=""></option>
                     <option value="frontEndDev" class="dropdown-item">Front End Dev</option>
                     <option value="backEndDev" class="dropdown-item">Back End Dev</option>
@@ -143,7 +146,6 @@
                     <option value="cloudArchitect" class="dropdown-item">Cloud Architect</option>
                 </select>
             </div>
-        </div>
         <div class="form-row">
             <div class="form-group col-md-12">
                 <button id="freelance-submit" type="submit" class="btn btn-default">Submit</button>
