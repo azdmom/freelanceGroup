@@ -2,12 +2,12 @@ var express = require("express");
 var router = express.Router();
 var db = require("../models");
 
-// post route to create burgers
-router.post("/employer/create", function(req, res) {
-  // edited burger create to add in a burger_name
+
+router.post("/employeradd", function(req, res) {
+ 
   db.employer.create({
     EmployerName: req.body.EmployerName,
-    Industry: req.body.Industr,
+    Industry: req.body.Industry,
     ContactName: req.body.ContactName,
     ContactPhone: req.body.ContactPhone,
     ContactEmail: req.body.ContactEmail,
