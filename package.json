@@ -25,5 +25,8 @@
     "mysql2": "^1.5.3",
     "select2": "^4.0.6-rc.1",
     "sequelize": "^4.38.0"
+  },
+  "engines" : {
+    "node" : "v9.3.0"
   }
 }
