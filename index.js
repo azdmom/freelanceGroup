@@ -1,6 +1,5 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var orm = require('orm');
 var nodemailer = require('nodemailer');
 
 var app = express();
@@ -42,6 +41,8 @@ var transporter = nodemailer.createTransport({
   html: '<p>We are so excited to reach back out to you as soon as our site is up and running! Please look out for pending news of our upcoming Launch Party! </p>'// plain text body
 };
  };
+
+ 
 
 db.sequelize.sync().then(function() {
   app.listen(PORT, function() {
