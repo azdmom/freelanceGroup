@@ -66,3 +66,12 @@ nav{
     margin-right: 20px;
     font-size: 20px;
 }
+
+@media (max-width: 500px) {
+
+.homeLogo {
+    height: 100%; 
+    width: 100%; 
+}
+
+}
