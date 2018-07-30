@@ -12,5 +12,8 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/employer.html"));
   });
 
+  app.get("/freelancer", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/freelancers.html"));
+  });
  
 }

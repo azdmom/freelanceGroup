@@ -1,9 +1,64 @@
-button {
-    border: 1px solid black !important;
+.frlncBtn {
+    border: 1px solid #B0ECE4 !important;
     border-radius: 5px !important; 
+    background-color: #B0ECE4;
+    color: darkslategrey;
+    text-shadow: 1px 1px lightgray;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.empButton {
+    border: 1px solid #B0ECE4 !important;
+    border-radius: 5px !important; 
+    background-color: white;
+    color: darkslategrey;
+    text-shadow: 1px 1px lightgray;
+}
+
+.btn:hover { 
+    background-color: white;
+    color: black;
+    text-shadow: none;
 }
 
 .container {
     height: 100%; 
     padding: 20px; 
+}
+
+.jumbotron{
+    background-color: #B0ECE4;
+    color: black;
+    border-bottom: black;
+}
+
+.logo{
+    width: fit-content;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+}
+
+nav{
+    padding: 0%;
+    margin: 0%;
+    background-color: white;
+}
+
+.homeLogo{
+   padding:1px;
+   background-color: lightgrey;
+   height: 600px;
+}
+
+.homeBtn{
+    border: 1px solid #B0ECE4 !important;
+    border-radius: 5px !important;
+    background-color: #B0ECE4;
+    color: black;
+    text-shadow: 2px 2px lightgrey;
+    padding: 20px;
+    margin-right: 20px;
+    font-size: 20px;
 }
