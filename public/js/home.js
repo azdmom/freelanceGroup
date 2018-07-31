@@ -58,7 +58,7 @@ $(document).ready(function () {
       });
     }
     else {
-      alert("Please complate all fields before submitting");
+      alert("Please complete all fields before submitting");
     }
 
   });
