@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 
   $("#freelance-submit").on("click", function (event) {
-    alert("Thank you for submitting your information!");
+    
     event.preventDefault();
 
     function validateForm() {
@@ -54,7 +54,7 @@ $(document).ready(function () {
         data: freelanceInfo
       }).then(function (data) {
         console.log(data);
-        location.reload();
+        alert("Thank you for submitting your information!");
       });
     }
     else {
